@@ -5,109 +5,123 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza plug</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-        <link rel="css/stylesheet" href="styles.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <header> 
-        <nav>
-            <ul>
-                <li><a href="index.htm">Home</a></li>
-                <li><a href="menus">Menu</a></li>
-                <li><a href="#">Order</a></li>
-                <li><a href="#">Contacts</a></li>
-            </ul>
-        </nav>
-        <h1>PIZZA plug</h1>
-        <h2>The Pizza Delivery Experts</h2>
-        <a href="">Order</a>
+        <div id="nav">
+            <img src="images/pizza-logo.png" alt="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="menus">Menu</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+            <h2>The Pizza Delivery Experts</h2>
+            <p><a href="#">Order</a></p>
+
     </header>
     <body>
-
-        <h2>WHAT'S ON THE MENU?</h2>
         <div class="menu">
+            <h2>WHAT'S ON THE MENU?</h2>
             <div class="row" id="menu">
-            <div class="col-md-3" id="pizza3">
-                <img id="port" src="images/pizza3.jpg" alt="pizza3">
-                
-            </div>
-            <div class="col-md-3" id="work3">
-                <img id="port" src="images/pizza4.jpg" alt="pizza4">
-                
-            </div>
-            <div class="col-md-3" id="work2">
-                <img id="port"src="images/pizza1.jpg" alt="pizza1">
+                <div class="col-md-3" id="menu1">
+                    <img id="port" src="images/pizza3.jpg" alt="pizza3">
+                </div>
+                <div class="col-md-3" id="menu2">
+                    <img id="port" src="images/pizza4.jpg" alt="pizza4">
+                </div>
+                <div class="col-md-3" id="menu3">
+                    <img id="port"src="images/pizza1.jpg" alt="pizza1">
+                </div>
+                <div class="col-md-3" id="menu4">
+                    <img id="port"src="images/pizza5.jpg" alt="pizza5">
                
-            </div>
-            <div class="col-md-3" id="pizza5">
-                <img id="port"src="images/pizza5.jpg" alt="">
-               
-            </div>
+                </div>
             </div>
             <div class="row" id="menu">
                 <div class="col-md-3" id="italy">
+                    <img src="images/italy.jpg" alt="">
                    
                 </div>
-                <div class="col-md-3" id="work6">
-                    <img id="port"src="images/pixx.jpg" alt="work6">
+                <div class="col-md-3" id="menu6">
+                    <img id="port"src="images/pixx.jpg" alt="pizza6">
                     
                 </div>
-                <div class="col-md-3" id="work7">
-                    <img id="port"src="images/meat-cullery-cheese.jpg" alt="work7">
+                <div class="col-md-3" id="menu7">
+                    <img id="port"src="images/meat-cullery-cheese.jpg" alt="pizza7">
                    
                 </div>
-                <div class="col-md-3" id="work8">
-                    <img src="images/margerita.jpg" alt="work8">
+                <div class="col-md-3" id="menu8">
+                    <img src="images/margerita.jpg" alt="pizza8">
                    
                 </div>
-            </div>      
-            <div class="orders" id="order">
-                <h1 class="text-center" id="order-pizza">Order Pizza</h1>
-                <div class="form-group row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-8 order-overlay text-center">
-                        <form class="col-sm-6 offset-sm-3 text-center">
-                            <label>Pick type of pizza:</label>
-                            <select class="custom-select custom-select-md mb-3 flavour" required>
-                                <option value="Pepperoni">Pepperoni</option>
-                                <option value="Meat-Delux">Meat Delux</option>
-                                <option value="Spicy Boerewors">Spicy Boerewors</option>
-                                <option value="Hawaiian">Hawaiian</option>
-                                <option value="Veg-Tikka">Veg Tikka</option>
-                                <option value="BBQ-Steak">BBQ Steak</option>
-                                <option value="Chicken Macon BBQ">Chicken Macon BBQ</option>
-                                <option value="Cheese Burger">Cheese Burger</option>
-                            </select>
-                            <label>Select size:</label>
-                            <select class="custom-select custom-select-md mb-3" id="size" required>
-                                <option value="regular">Regular</option>
-                                <option value="medium">Medium</option>
-                                <option value="large">Large</option>
-                            </select>
-                            <label for="crust">Pick preffered Crust:</label>
-                            <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                <option value="thin">Thin Crust @ Ksh. 100</option>
-                                <option value="thick">Thick Crust @ Ksh. 150</option>
-                                <option value="flatbread">Cheese-Stuffed Crust @ sh. 20</option>
-                                <option value="custom">Flatbread@ sh. 280</option>
-               
-                            </select>
-                            <label>Pick your preffered Toppings</label>
-                            <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                <option value="mince">Pineapple @ sh. 120</option>
-                                <option value="onions">Onions @ sh. 100</option>
-                                <option value="mushroom">Mushroom @ sh. 100</option>
-                                <option value="sweetcorn">Spinach @ sh. 120</option>
-                                <option value="greenpepper">Sausage @ sh. 120</option>
-                                <option value="olives">Black Olives @ sh. 120</option>
-                                <option value="tomato">Pepperoni @ sh. 100</option>
-                                <option value="pineapple">Extra Cheese @ sh. 150</option>
-                                <option value="macon">Becon @ sh. 200</option>
-                            </select>
-                            <label for="number">Number of Pizza's</label>
-                            <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                        </form>
+            </div> 
+        </div>
+        <div class="jumbotron">
+            <div class="card">
+                <div class="card-body">
+                    <div class="orders" id="order">
+                        <h1 class="text-center" id="order-pizza">Order Pizza</h1>
+                        <div class="form-group row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8 order-overlay text-center">
+                                <form class="col-sm-6 offset-sm-3 text-center">
+                                    <label>Pick type of pizza:</label>
+                                    <select class="custom-select custom-select-md mb-3 flavour" required>
+                                        <option value="Pepperoni">Pepperoni</option>
+                                        <option value="Meat-Delux">Meat Delux</option>
+                                        <option value="Spicy Boerewors">Spicy Boerewors</option>
+                                        <option value="Hawaiian">Hawaiian</option>
+                                        <option value="Veg-Tikka">Veg Tikka</option>
+                                        <option value="BBQ-Steak">BBQ Steak</option>
+                                        <option value="Chicken Macon BBQ">Chicken Macon BBQ</option>
+                                        <option value="Cheese Burger">Cheese Burger</option>
+                                    </select>
+                                    <label>Select size:</label>
+                                    <select class="custom-select custom-select-md mb-3" id="size" required>
+                                        <option value="regular">Regular</option>
+                                        <option value="medium">Medium</option>
+                                        <option value="large">Large</option>
+                                    </select>
+                                    <label for="crust">Pick preffered Crust:</label>
+                                    <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                        <option value="thin">Thin Crust @ Ksh. 100</option>
+                                        <option value="thick">Thick Crust @ Ksh. 150</option>
+                                        <option value="flatbread">Cheese-Stuffed Crust @ sh. 200</option>
+                                        <option value="custom">Flatbread@ sh. 280</option>
+                           
+                                    </select>
+                                    <label>Pick your preffered Toppings</label>
+                                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                        <option value="mince">Pineapple @ sh. 120</option>
+                                        <option value="onions">Onions @ sh. 100</option>
+                                        <option value="mushroom">Mushroom @ sh. 100</option>
+                                        <option value="sweetcorn">Spinach @ sh. 120</option>
+                                        <option value="greenpepper">Sausage @ sh. 120</option>
+                                        <option value="olives">Black Olives @ sh. 120</option>
+                                        <option value="tomato">Pepperoni @ sh. 100</option>
+                                        <option value="pineapple">Extra Cheese @ sh. 150</option>
+                                        <option value="macon">Becon @ sh. 200</option>
+                                    </select>
+                                    <label for="number">Number of Pizza's</label>
+                                    <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
+                                </form>
+                                <button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button>
+
+                                <div class="col-sm-2"></div>
+
+                                <button class="">Delivery</button>
+                                <button class="">Pick Up</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>   
         </div>
+        <script src="js/scripts.js"></script>
     </body>
 </html>
