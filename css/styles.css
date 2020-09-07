@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Love+Ya+Like+A+Sister|Special+Elite&display=swap');
+
+
 header{
     background-image: url("../images/pizza2.webp"); 
     background-position: center center;
@@ -9,7 +13,7 @@ header{
     
 }
 header h2{
-    font-family: "Risque";
+    font-family: ;
     font-size: 145px;
     line-height: 166px;
     background-size: cover;
@@ -42,7 +46,7 @@ header p >a{
 nav {
     max-width: 960px;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 30px 0 5px;
     margin-right: 0%;
 }
 nav>ul {
@@ -54,30 +58,39 @@ nav>ul>li {
 nav ul li a {
     padding: 18px;
     margin-right: 0;
-    text-transform: uppercase;
-    text-decoration: none;
     display: block;
     color: red;
 }
-nav>ul>li>a:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), insert 0 0 1px rgba(255, 255, 255, 0.6);
-    background: rgba(21, 109, 35, 0.678);
-    color: rgba(0, 35, 122, 0.7);
-}
+
 .menu{
     background-color: #403E3E;
+}
+.menu h2{
     text-align: center;
     color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-
+    font-weight: 900;
+    padding-top: 20px;
 }
+
 #menu{
     padding-top: 20px;
 }
+
 .menu img{
     height: 300px;
     width: 350px;
+}
+
+.jumbotron{
+    display: flex;
+}
+
+.card{
+    width: 70%;
+    /* margin: auto; */
+}
+
+.card-body{
+    background-color: #403E3E;
+    color: white;
 }
