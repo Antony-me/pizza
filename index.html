@@ -5,9 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pizza plug</title>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css.map" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Merienda&family=Playball&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.5.1.js"></script>
     </head>
     <header> 
         <div id="nav">
@@ -67,64 +69,73 @@
                 <div class="card-body">
                     <div class="orders" id="order">
                         <h1 class="text-center" id="order-pizza">Make An Order</h1>
-                        <div class="form-group row">
-                            <div class="col-sm-2"></div>
-                            <div class="col-sm-8 order-overlay text-center">
-                                <form class="col-sm-6 offset-sm-3 text-center">
-                                    <label>Pick type of pizza:</label>
-                                    <select class="custom-select custom-select-md mb-3 flavour" required>
+                        <div class="col-md-6">
+                            <div class="well">
+                              <div class = "form-group">
+                                <form id= "pizzaOrder">
+                                    <label for="pizza">Pick type of pizza:</label>
+                                    <select class="custom-select custom-select-md mb-3 flavour" required id="pizza">
                                         <option value="Pepperoni">Pepperoni</option>
-                                        <option value="Meat-Delux">Meat Delux</option>
-                                        <option value="Spicy Boerewors">Spicy Boerewors</option>
+                                        <option value="Meat-Deluxe">Meat Deluxe</option>
+                                        <option value="Spicy-Boerewors">Spicy Boerewors</option>
                                         <option value="Hawaiian">Hawaiian</option>
                                         <option value="Veg-Tikka">Veg Tikka</option>
                                         <option value="BBQ-Steak">BBQ Steak</option>
-                                        <option value="Chicken Macon BBQ">Chicken Macon BBQ</option>
-                                        <option value="Cheese Burger">Cheese Burger</option>
+                                        <option value="Chicken-Macon-BBQ">Chicken Macon BBQ</option>
+                                        <option value="Cheese-Burger">Cheese Burger</option>
                                     </select>
-                                    <label>Select size:</label>
-                                    <select class="custom-select custom-select-md mb-3" id="size" required>
-                                        <option value="regular">Regular</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="large">Large</option>
+                                    <label for="size">Select Size of Pizza:</label>
+                                    <select class="form-control" id="size">
+                                      <option value= 300>Small: ksh 300</option>
+                                      <option value= 600>Medium: ksh 600</option>
+                                      <option value= 900>Large: ksh 900</option>
+                                      <option value= 1200>Extra-Large: ksh 1200</option>
                                     </select>
-                                    <label for="crust">Pick preffered Crust:</label>
-                                    <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                        <option value="thin">Thin Crust @ Ksh. 100</option>
-                                        <option value="thick">Thick Crust @ Ksh. 150</option>
-                                        <option value="flatbread"> Flatbread @ sh. 200</option>
-                           
+                                    <label for="crust">Pick your preffered crust:</label>
+                                    <select class="form-control" id="crust">
+                                      <option value= 0>Plain</option>
+                                      <option value= 100>Thin crust</option>
+                                      <option value= 150>Thick crust</option>
+                                      <option value= 200>Flatbread</option>
                                     </select>
-                                    <label>Pick your preffered Toppings</label>
-                                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                        <option value="mince">Pineapple @ sh. 120</option>
-                                        <option value="onions">Onions @ sh. 100</option>
-                                        <option value="mushroom">Mushroom @ sh. 100</option>
-                                        <option value="sweetcorn">Spinach @ sh. 120</option>
-                                        <option value="greenpepper">Sausage @ sh. 120</option>
-                                        <option value="olives">Black Olives @ sh. 120</option>
-                                        <option value="tomato">Pepperoni @ sh. 100</option>
-                                        <option value="pineapple">Extra Cheese @ sh. 150</option>
-                                        <option value="macon">Becon @ sh. 200</option>
+                                    <label for="toppings">Pick your preffered Topping:</label>
+                                    <select class="form-control" id="toppings">
+                                        <option value="0">none</option>
+                                        <option value=120>Pineapple @ sh. 120</option>
+                                        <option value=100>Onions @ sh. 100</option>
+                                        <option value=100>Mushroom @ sh. 100</option>
+                                        <option value=120>Spinach @ sh. 120</option>
+                                        <option value=120>Sausage @ sh. 120</option>
+                                        <option value=120>Black Olives @ sh. 120</option>
+                                        <option value=100>Pepperoni @ sh. 100</option>
+                                        <option value=150>Extra Cheese @ sh. 150</option>
+                                        <option value=200>Becon @ sh. 200</option>
                                     </select>
                                     <label for="number">Number of Pizza's</label>
                                     <input type="number" class="form-control" id="number" placeholder="Number of pizzas" min="1" required>
-                                
+                                    <button type="submit" class="btn btn-success" id="orderButton">Get Price</button>
+                                    <button type="button" class="btn btn-danger" value="Refresh Page" onClick="window.location.reload()" id="cancelButton">Cancel</button>
                                 </form>
-                                <button type="submit" class="btn btn-success checkout" id="checkout">Checkout</button>
-
-                                <div class="col-sm-2"></div>
-
-                                <button class="">Delivery</button>
-                                <button class="">Pick Up</button>
+                            </div>
+                            <div class="col-md-3">
+                              <div class="well" id="rightCol"></div>
+                            </div>
+                            <div id="customerOrder">
+                                <div class="well" id="displayWell">
+                                <h1 class="orderTitle">Your Pizza Total:</h1>
+                                    <ul>
+                    
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               
-            </div>  
-            <img src="images/chef.png" alt="order"> 
+            </div>
+            
         </div>
+        <img src="images/chef.png" alt="chef">
+        
         <script src="js/scripts.js"></script>
     </body>
 </html>

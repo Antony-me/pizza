@@ -92,14 +92,25 @@ nav ul li a {
 
 .jumbotron{
     display: flex;
+    flex-direction: row;
+
+}
+.jumbotron img{
+    width: 700px;
+    height: 600px;
 }
 
 .card{
-    width: 70%;
-    /* margin: auto; */
+    width: 80%;
+    height: 600px;
 }
 
 .card-body{
     background-color: #403E3E;
     color: white;
+}
+
+.well{
+    color: red;
+    font-size: 1em;
 }
