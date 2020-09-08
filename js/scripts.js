@@ -22,11 +22,10 @@ function Pizza(size, crust,toppings,number){
       var number = parseInt($("#number").val());
       var userPizza = new Pizza(size,crust,toppings, number);
       
-      $("#customerOrder").slideToggle();
-      $("li").remove();
-      $("ul").append("<li>" + "ksh " + userPizza.price() + "</li>");
+      $("#customerOrder").slideToggle(500);
+      $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
+      $(".pitza li").remove();
+      $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
     });
   });
-  
-
   
