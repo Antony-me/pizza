@@ -10,6 +10,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Merienda&family=Playball&display=swap" rel="stylesheet">
         <script src="js/jquery-3.5.1.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <header> 
         <div id="nav">
@@ -68,13 +69,14 @@
             <div class="card">
                 <div class="card-body">
                     <div class="orders" id="order">
-                        <h1 class="text-center" id="order-pizza">Make An Order</h1>
+                        <h3 class="text-center" id="order-pizza">Make An Order</h3>
                         <div class="col-md-6">
                             <div class="pitza">
                               <div class = "form-group">
                                 <form id= "pizzaOrder">
                                     <label for="pizza">Pick type of pizza:</label>
-                                    <select class="custom-select custom-select-md mb-3 flavour" required id="pizza">
+                                    <select class="custom-select custom-select-md mb-3 flavour" required id="pizza" >
+                                        <option value="">Select flavour</option>
                                         <option value="Pepperoni">Pepperoni</option>
                                         <option value="Meat-Deluxe">Meat Deluxe</option>
                                         <option value="Spicy-Boerewors">Spicy Boerewors</option>
@@ -86,6 +88,7 @@
                                     </select>
                                     <label for="size">Select Size of Pizza:</label>
                                     <select class="form-control" id="size">
+                                        <option value="">Select Size</option>
                                       <option value= 300>Small: ksh 300</option>
                                       <option value= 600>Medium: ksh 600</option>
                                       <option value= 900>Large: ksh 900</option>
@@ -94,9 +97,9 @@
                                     <label for="crust">Pick your preffered crust:</label>
                                     <select class="form-control" id="crust">
                                       <option value= 0>Plain</option>
-                                      <option value= 100>Thin crust</option>
-                                      <option value= 150>Thick crust</option>
-                                      <option value= 200>Flatbread</option>
+                                      <option value= 100>Thin crust @ ksh 100</option>
+                                      <option value= 150>Thick crust @ ksh 150</option>
+                                      <option value= 200>Flatbread @ ksh 200</option>
                                     </select>
                                     <label for="toppings">Pick your preffered Topping:</label>
                                     <select class="form-control" id="toppings">
@@ -122,12 +125,34 @@
                               <div class="pitza" id="rightCol"></div>
                             </div>
                             <div id="customerOrder">
-                                <div class="pitza" id="displayWell">
-                                <h1 class="orderTitle">Your Pizza Total:</h1>
-                                    <ul>
-                    
-                                    </ul>
-                                </div>
+                                <div class="daa" id="all">
+                                    <h5 class="orderTitle">Your Order:</h5>
+                                        <ul>
+                        
+                                        </ul>
+                                    </div>
+                                    <div class="pitza" id="displayWell">
+                                        <h5 class="orderTitle">Your Pizza Total:</h5>
+                                            <ul>
+                            
+                                            </ul>
+                                    </div>
+                                    <div class="d-block mx-auto text-center">
+                                        <button class='deliver'>Make Delivery</button>
+                                        <button class='delivernot'>Pick Up</button>
+                                    </div>
+                                    <div class="cdata-overlay">
+                                        <div class="customerdata row">
+                                            <div class="col-sm-3"></div>
+                                            <form action="" class="form-group col-sm-6 data" id="location">
+                                                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                                                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                                                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                                            </form>
+                                
+                                            <!-- <div class="col-sm-3"></div> -->
+                                        </div>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -139,7 +164,7 @@
         <footer>
             <h2>Contacts</h2>
             <ul>
-                <li>TEl</li>
+                <li>TEL</li>
                 <li>Facebook</li>
                 <li>Twitter</li>
                 <li>Email</li>

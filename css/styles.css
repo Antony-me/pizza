@@ -101,22 +101,39 @@ nav ul li a {
 }
 .jumbotron img{
     width: 700px;
-    height: 600px;
+    height: 650px;
 }
 
 .card{
     width: 80%;
-    height: 600px;
+    height: 650px;
 }
 
 .card-body{
     background-color: #403E3E;
     color: white;
+    
+}
+label{
+    height: 3px;
 }
 
-.pitza{
-    color: red;
-    font-size: 1em;
+.pitza, .daa{
+    color: white;
+    font-size: 0.8em;
+    font-family: inherit;
+}
+
+button{
+    margin: 10px;
+}
+
+.cdata-overlay input{
+    /* display: none; */
+    height:20%;
+    width: 150%;
+    font-size:1em;
+    color: white;
 }
 
 footer{

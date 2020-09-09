@@ -11,9 +11,37 @@ function Pizza(size, crust,toppings,number){
     var total = (this.size + this.crust + this.toppings)* this.number;
     return total;
   };
+ 
   
-  
+
+
   $(document).ready(function(){
+    $(function(){
+      $("#pizza"). change(function(){
+        var pizzaFlavour = $("#pizza option:selected").text();
+        $(".daa ul").append("<li>" + "PIZZA FLAVOUR:   " +   pizzaFlavour + "</li>");
+      })
+    })
+   
+
+    $(function(){
+      $("#size"). change(function(){
+        var pizzaSize = $("#size option:selected").text();
+        $(".daa ul").append("<li>" + "PIZZA SIZE:   " +   pizzaSize + "</li>");
+      })
+    })
+    $(function(){
+      $("#crust"). change(function(){
+        var fevCrust = $("#crust option:selected").text();
+        $(".daa ul").append("<li>" + "CRUST:   " +   fevCrust + "</li>");
+      })
+    })
+    $(function(){
+      $("#toppings"). change(function(){
+        var fevToppings = $("#toppings option:selected").text();
+        $(".daa ul").append("<li>" + "TOPPINGS:  " +  fevToppings + "</li>");
+      })
+    })
     $("#pizzaOrder").submit(function(event){
       event.preventDefault();
       var size = parseInt($("#size").val());
@@ -22,10 +50,13 @@ function Pizza(size, crust,toppings,number){
       var number = parseInt($("#number").val());
       var userPizza = new Pizza(size,crust,toppings, number);
       
-      $("#customerOrder").slideToggle(500);
+      // $("#customerOrder").slideToggle(500);
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
       $(".pitza li").remove();
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
-    });
+     
+      });
+
   });
+  
   
