@@ -11,13 +11,15 @@ function Pizza(size, crust,toppings,number){
     var total = (this.size + this.crust + this.toppings)* this.number;
     return total;
   };
-  
+  $(function(){
+    $("#pizza"). change(function(){
+      var customerpizza = $("#pizza option:selected").text();
+      $("#customerOrder").slideToggle(500);
+      $(".daa ul").append("<li>" + customerpizza + "</li>");
+    })
+  })
 
-// var pizza = document.getElementById("pizza").value;
-// var size = document.getElementById("size");
-// var crust =document.getElementById("crust").value;
-// var toppings = document.getElementById("toppings").value;
-  
+
   $(document).ready(function(){
     $("#pizzaOrder").submit(function(event){
       event.preventDefault();
@@ -31,6 +33,8 @@ function Pizza(size, crust,toppings,number){
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
       $(".pitza li").remove();
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
+     
       });
+
   });
   
