@@ -25,6 +25,7 @@ This is a web application for ordering Pizza
 * [CSS](https://github.com/topics/css3)
 * [Bootstrap](https://github.com/topics/bootstrap)
 * [jQuery](https://github.com/topics/javascript)
+* [javaScript](https://github.com/topics/javascript)
 
 
 
