@@ -32,12 +32,12 @@ This is a web application for ordering Pizza
 ## BDD
 | Behaviour      | Input        | Output       |
 | :------------- | :----------: | -----------: |
-|  Select Pizza flavour |    |   |
-| select pizza size |  |  |
-|select crust |  |     |
-| select toppings|     | :----------:|
-| Checkout the order| :----------: | -----------: |
-| Enter delivery details| :----------: | -----------: |
+|  Select Pizza flavour |   select from options |   |
+| select pizza size |select from options  |  |
+|select crust | select from options |     |
+| select toppings|  select from options   | :----------:|
+| Checkout the order| :----------: | We have received your order and is being processed |
+| Enter delivery details| Name, Phone number ,location  | -----------: |
 
 ## Known Bugs
 * The site is not very responsive
