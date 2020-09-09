@@ -75,7 +75,8 @@
                               <div class = "form-group">
                                 <form id= "pizzaOrder">
                                     <label for="pizza">Pick type of pizza:</label>
-                                    <select class="custom-select custom-select-md mb-3 flavour" required id="pizza">
+                                    <select class="custom-select custom-select-md mb-3 flavour" required id="pizza" >
+                                        <option value="">Select flavour</option>
                                         <option value="Pepperoni">Pepperoni</option>
                                         <option value="Meat-Deluxe">Meat Deluxe</option>
                                         <option value="Spicy-Boerewors">Spicy Boerewors</option>
@@ -87,6 +88,7 @@
                                     </select>
                                     <label for="size">Select Size of Pizza:</label>
                                     <select class="form-control" id="size">
+                                        <option value="">Select Size</option>
                                       <option value= 300>Small: ksh 300</option>
                                       <option value= 600>Medium: ksh 600</option>
                                       <option value= 900>Large: ksh 900</option>
@@ -134,7 +136,23 @@
                                             <ul>
                             
                                             </ul>
+                                    </div>
+                                    <div class="d-block mx-auto text-center">
+                                        <button class='deliver'>Make Delivery</button>
+                                        <button class='delivernot'>Pick Up</button>
+                                    </div>
+                                    <div class="cdata-overlay">
+                                        <div class="customerdata row">
+                                            <div class="col-sm-3"></div>
+                                            <form action="" class="form-group col-sm-6 data" id="location">
+                                                <input type="text" class="form-control cdata" placeholder="Enter your Name:">
+                                                <input type="text" class="form-control cdata" placeholder="Enter your phone number: ">
+                                                <input type="text" class="form-control cdata" placeholder="Enter the location: ">
+                                            </form>
+                                
+                                            <!-- <div class="col-sm-3"></div> -->
                                         </div>
+                                    </div>
                             </div>
                         </div>
                     </div>

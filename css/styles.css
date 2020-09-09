@@ -101,12 +101,12 @@ nav ul li a {
 }
 .jumbotron img{
     width: 700px;
-    height: 600px;
+    height: 650px;
 }
 
 .card{
     width: 80%;
-    height: 600px;
+    height: 650px;
 }
 
 .card-body{
@@ -126,6 +126,14 @@ label{
 
 button{
     margin: 10px;
+}
+
+.cdata-overlay input{
+    /* display: none; */
+    height:20%;
+    width: 150%;
+    font-size:1em;
+    color: white;
 }
 
 footer{
