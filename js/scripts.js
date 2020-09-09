@@ -50,7 +50,7 @@ function Pizza(size, crust,toppings,number){
       var number = parseInt($("#number").val());
       var userPizza = new Pizza(size,crust,toppings, number);
       
-      // $("#customerOrder").slideToggle(500);
+
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
       $(".pitza li").remove();
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
@@ -60,7 +60,6 @@ function Pizza(size, crust,toppings,number){
   });
   
   $(".deliver").click(function () {
-    // $('.pitza').slideDown();
     $('.daa').slideUp();
     $('.deliver').hide();
     $('.delivernot').hide();
@@ -68,9 +67,9 @@ function Pizza(size, crust,toppings,number){
 });
 
 
-//Pick Up
 $(".delivernot").click(function () {
-  $(alert("Thank you, We have received your order and it is being processed"))
+  $(alert("Thank you, We have received your order and it is being processed"));
 
 });
+
 

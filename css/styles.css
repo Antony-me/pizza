@@ -97,10 +97,11 @@ nav ul li a {
 .jumbotron{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
 }
 .jumbotron img{
-    width: 700px;
+    width: 6000px;
     height: 720px;
 }
 
