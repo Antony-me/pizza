@@ -101,23 +101,27 @@ nav ul li a {
 
 }
 .jumbotron img{
-    width: 6000px;
     height: 720px;
 }
 
 .card{
-    width: 80%;
+    width: 70%;
     height: 720px;
+    
 }
 
 .card-body{
     background-color: #403E3E;
     color: white;
     
+    
 }
+
+
+
 label{
     height: 3px;
-}y
+}
 
 .pitza, .daa{
     color: white;
