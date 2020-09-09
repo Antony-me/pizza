@@ -112,12 +112,20 @@ nav ul li a {
 .card-body{
     background-color: #403E3E;
     color: white;
+    
+}
+label{
+    height: 3px;
 }
 
 .pitza{
-    color: red;
-    font-size: 1em;
+    color: white;
+    font-size: 0.8em;
     font-family: inherit;
+}
+
+button{
+    margin: 10px;
 }
 
 footer{

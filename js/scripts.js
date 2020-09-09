@@ -12,6 +12,11 @@ function Pizza(size, crust,toppings,number){
     return total;
   };
   
+
+// var pizza = document.getElementById("pizza").value;
+// var size = document.getElementById("size");
+// var crust =document.getElementById("crust").value;
+// var toppings = document.getElementById("toppings").value;
   
   $(document).ready(function(){
     $("#pizzaOrder").submit(function(event){
@@ -26,6 +31,6 @@ function Pizza(size, crust,toppings,number){
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
       $(".pitza li").remove();
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
-    });
+      });
   });
   
