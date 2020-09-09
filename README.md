@@ -33,7 +33,7 @@ This is a web application for ordering Pizza
 | :------------- | :----------: | -----------: |
 |  Select Pizza flavour |    |   |
 | select pizza size |  |  |
-| | select crust |     |
+|select crust |  |     |
 | select toppings|     | :----------:|
 | Checkout the order| :----------: | -----------: |
 | Enter delivery details| :----------: | -----------: |
@@ -45,4 +45,4 @@ This is a web application for ordering Pizza
 
 [Email](antonymunyasia993@gmail.com)
 
-#### Live Page /
+#### Live Page https://antony-me.github.io/pizza/
