@@ -25,6 +25,7 @@ This is a web application for ordering Pizza
 * [CSS](https://github.com/topics/css3)
 * [Bootstrap](https://github.com/topics/bootstrap)
 * [jQuery](https://github.com/topics/javascript)
+* [javaScript](https://github.com/topics/javascript)
 
 
 
@@ -33,7 +34,7 @@ This is a web application for ordering Pizza
 | :------------- | :----------: | -----------: |
 |  Select Pizza flavour |    |   |
 | select pizza size |  |  |
-| | select crust |     |
+|select crust |  |     |
 | select toppings|     | :----------:|
 | Checkout the order| :----------: | -----------: |
 | Enter delivery details| :----------: | -----------: |
@@ -45,4 +46,4 @@ This is a web application for ordering Pizza
 
 [Email](antonymunyasia993@gmail.com)
 
-#### Live Page /
+#### Live Page https://antony-me.github.io/pizza/
