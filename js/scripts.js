@@ -56,7 +56,21 @@ function Pizza(size, crust,toppings,number){
       $(".pitza ul").append("<li>" + "Ksh" + userPizza.price() + "</li>");
      
       });
-
+     
   });
   
-  
+  $(".deliver").click(function () {
+    // $('.pitza').slideDown();
+    $('.daa').slideUp();
+    $('.deliver').hide();
+    $('.delivernot').hide();
+    $('.cdata-overlay form').show();
+});
+
+
+//Pick Up
+$(".delivernot").click(function () {
+  $(alert("Thank you, We have received your order and it is being processed"))
+
+});
+
